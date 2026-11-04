@@ -1,0 +1,70 @@
+# NZ WHV fill helper — profile template
+#
+# One value per line:  Label = value
+# The ORDER matters. It is the order the queue hands values out.
+# Lines starting with # are ignored.
+#
+# Copy this file, replace the values, paste into the extension Options page.
+# Every value below is a placeholder.
+#
+# ---------------------------------------------------------------------------
+# PAGE 1 — Personal details
+# ---------------------------------------------------------------------------
+Preferred title = Ms
+Family name = EXAMPLE
+Given name 1 = TEST
+Given name 2 =
+Gender = Female
+Date of birth = 1990-01-01
+Country of birth = Belgium
+Town or city of birth = Brussels
+Street number = 1
+Street name = Example Street
+Suburb = Centre
+City = Brussels
+Postcode = 1000
+Country = Belgium
+Phone = +32 2 123 45 67
+Mobile = +32 470 12 34 56
+Email = you@example.com
+Are you represented by an immigration adviser = No
+Do you have a payment card available = Yes
+
+# ---------------------------------------------------------------------------
+# PAGE 2 — Identification
+# ---------------------------------------------------------------------------
+Passport number = X1234567
+Re-enter passport number = X1234567
+Passport expiry date = 2035-01-01
+Passport issue date = 2025-01-01
+Passport issuing country = Belgium
+Second form of identification = National ID
+National ID number = 001199001234
+Date document was issued = 2015-06-01
+
+# ---------------------------------------------------------------------------
+# PAGE 3 — Occupation details (all optional, safe to skip)
+# ---------------------------------------------------------------------------
+Industry = Education
+Occupation = Student
+Employer name =
+
+
+# ---------------------------------------------------------------------------
+# PAGE 4 — Health
+# Radio groups are handled by the Bulk "No" button (Alt+B).
+# The TB-risk-country question and the pregnancy question are left for you.
+# ---------------------------------------------------------------------------
+# PAGE 5 — Character
+# All radio groups, handled by Alt+B. Answer No unless you have a record.
+# ---------------------------------------------------------------------------
+# PAGE 6 — Working Holiday Specific
+# ---------------------------------------------------------------------------
+Intended date of travel to New Zealand = 2027-04-01
+
+# The Yes/No block on this page is handled by Alt+B (answer No), except:
+#   sufficient funds (NZD 4,200)      = Yes
+#   funds for an outward ticket       = Yes
+#   meet the specific requirements    = Yes
+# Set those three by hand, or put them in the list below and answer the rest
+# with Alt+B first, then fix the three.

@@ -1,0 +1,105 @@
+### AUTOFILL PROFILES ###,,,,,,
+Profile ID,Name,Site,Hotkey,,,
+c2,PD,onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Personal1.aspx,,,,
+c3,ID,onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Personal2.aspx,,,,
+c4,Health,onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Medical1.aspx,,,,
+c5,Character,onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Character.aspx,,,,
+c6,WHS,onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/WorkingHolidaySpecific.aspx,,,,
+c7,Submit,onlineservices.immigration.govt.nz/WorkingHoliday/Application/Submit.aspx,,,,
+c8,Payment,onlineservices.immigration.govt.nz/PaymentGateway/OnLinePayment.aspx,,,,
+c9,Payment final,payments.paystation.co.nz/hosted/,,,,
+### AUTOFILL RULES ###,,,,,,
+Rule ID,Type,Name,Value,Site,Mode,Profile
+r26,0,"""_ctl0:ContentPlaceHolder1:personDetails:familyNameTextBox""",EXAMPLE,,1,c2
+r27,0,"""_ctl0:ContentPlaceHolder1:personDetails:givenName1Textbox""",TEST,,1,c2
+r28,0,"""_ctl0:ContentPlaceHolder1:personDetails:dateOfBirthDatePicker_DatePicker""","1 January, 1990",,1,c2
+r29,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:address1TextBox""",1 Example Street,,1,c2
+r30,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:suburbTextBox""",Sampleton,,1,c2
+r31,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:cityTextBox""",Sampleton,,1,c2
+r32,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:contactDetails:emailAddressTextBox""",you@example.com,,1,c2
+r33,2,"""_ctl0:ContentPlaceHolder1:personDetails:genderDropDownList""","""F""",,1,c2
+r34,2,"""_ctl0:ContentPlaceHolder1:personDetails:CountryDropDownList""","""16""",,1,c2
+r35,2,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:countryDropDownList""","""16""",,1,c2
+r36,2,"""_ctl0:ContentPlaceHolder1:hasAgent:representedByAgentDropdownlist""","""No""",,1,c2
+r37,2,"""_ctl0:ContentPlaceHolder1:hasCreditCard:hasCreditCardDropDownlist""","""Yes""",,1,c2
+r38,0,"""_ctl0:ContentPlaceHolder1:identification:passportNumberTextBox""",X1234567,,1,c3
+r39,0,"""_ctl0:ContentPlaceHolder1:identification:confirmPassportNumberTextBox""",X1234567,,1,c3
+r40,0,"""_ctl0:ContentPlaceHolder1:identification:passportExpiryDateDatePicker_DatePicker""","1 January, 2035",,1,c3
+r41,0,"""_ctl0:ContentPlaceHolder1:identification:otherIssueDateDatePicker_DatePicker""","1 January, 2025",,1,c3
+r42,2,"""_ctl0:ContentPlaceHolder1:identification:otherIdentificationDropdownlist""","""3""",,1,c3
+r43,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:renalDialysisDropDownList""","""No""",,1,c4
+r44,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:tuberculosisDropDownList""","""No""",,1,c4
+r45,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:cancerDropDownList""","""No""",,1,c4
+r46,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:heartDiseaseDropDownList""","""No""",,1,c4
+r47,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:disabilityDropDownList""","""No""",,1,c4
+r48,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:hospitalisationDropDownList""","""No""",,1,c4
+r49,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:residentailCareDropDownList""","""No""",,1,c4
+r50,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:pregnancy:pregnancyStatusDropDownList""","""No""",,1,c4
+r51,2,"""_ctl0:ContentPlaceHolder1:medicalConditions:tbRiskDropDownList""","""No""",,1,c4
+r52,2,"""_ctl0:ContentPlaceHolder1:character:imprisonment5YearsDropDownList""","""No""",,1,c5
+r53,2,"""_ctl0:ContentPlaceHolder1:character:imprisonment12MonthsDropDownList""","""No""",,1,c5
+r54,2,"""_ctl0:ContentPlaceHolder1:character:deportedDropDownList""","""No""",,1,c5
+r55,2,"""_ctl0:ContentPlaceHolder1:character:chargedDropDownList""","""No""",,1,c5
+r56,2,"""_ctl0:ContentPlaceHolder1:character:convictedDropDownList""","""No""",,1,c5
+r57,2,"""_ctl0:ContentPlaceHolder1:character:underInvestigationDropDownList""","""No""",,1,c5
+r58,2,"""_ctl0:ContentPlaceHolder1:character:excludedDropDownList""","""No""",,1,c5
+r59,2,"""_ctl0:ContentPlaceHolder1:character:removedDropDownList""","""No""",,1,c5
+r60,0,"""_ctl0:ContentPlaceHolder1:offshoreDetails:intendedTravelDateDatePicker_DatePicker""","1 April, 2027",,1,c6
+r61,2,"""_ctl0:ContentPlaceHolder1:offshoreDetails:commonWHSQuestions:previousWhsPermitVisaDropDownList""","""No""",,1,c6
+r62,2,"""_ctl0:ContentPlaceHolder1:offshoreDetails:commonWHSQuestions:sufficientFundsHolidayDropDownList""","""Yes""",,1,c6
+r63,2,"""_ctl0:ContentPlaceHolder1:offshoreDetails:beenToNzDropDownList""","""No""",,1,c6
+r64,2,"""_ctl0:ContentPlaceHolder1:offshoreDetails:requirementsQuestions:sufficientFundsOnwardTicketDropDownList""","""Yes""",,1,c6
+r65,2,"""_ctl0:ContentPlaceHolder1:offshoreDetails:requirementsQuestions:readRequirementsDropDownList""","""Yes""",,1,c6
+r66,3,"""_ctl0:ContentPlaceHolder1:falseStatementCheckBox""",1,,1,c7
+r67,3,"""_ctl0:ContentPlaceHolder1:notesCheckBox""",1,,1,c7
+r68,3,"""_ctl0:ContentPlaceHolder1:circumstancesCheckBox""",1,,1,c7
+r69,3,"""_ctl0:ContentPlaceHolder1:warrantsCheckBox""",1,,1,c7
+r70,3,"""_ctl0:ContentPlaceHolder1:informationCheckBox""",1,,1,c7
+r71,3,"""_ctl0:ContentPlaceHolder1:healthCheckBox""",1,,1,c7
+r72,3,"""_ctl0:ContentPlaceHolder1:adviceCheckBox""",1,,1,c7
+r73,3,"""_ctl0:ContentPlaceHolder1:registrationCheckBox""",1,,1,c7
+r74,3,"""_ctl0:ContentPlaceHolder1:entitlementCheckbox""",1,,1,c7
+r75,3,"""_ctl0:ContentPlaceHolder1:permitExpiryCheckBox""",1,,1,c7
+r76,3,"""_ctl0:ContentPlaceHolder1:medicalInsuranceCheckBox""",1,,1,c7
+r77,0,"""_ctl0:ContentPlaceHolder1:payerNameTextBox""",EXAMPLE TEST,,1,c8
+### AUTOFILL SETTINGS ###,,,,,,
+advanced,[],,,,,
+exceptions,[],,,,,
+textclips,[],,,,,
+variables,[],,,,,
+allhotkey,,,,,,
+importurl,,,,,,
+lastmod,2026-01-01T00:00:00.000Z,,,,,
+spreadsheetid,,,,,,
+spreadsheetname,Example export,,,,,
+activecat,1,,,,,
+attributesoff,0,,,,,
+backup,0,30,,,,
+badge,1,,,,,
+bisync,0,,,,,
+captchas,0,,,,,
+closeinfobar,1,1,,,,
+debug,0,,,,,
+delay,0,0.5,,,,
+exeinorder,0,,,,,
+expirecats,0,,,,,
+filtercats,0,,,,,
+fluid,1,,,,,
+hidebackup,0,,,,,
+ietextbox,0,,,,,
+manual,0,,,,,
+mask,1,,,,,
+menu,1,2,,,,
+overwrite,1,,,,,
+parselabels,0,,,,,
+randdelay,1,,,,,
+reveal,0,0,,,,
+review,1,1,,,,
+sitefilters,1,0,,,,
+skiphidden,0,,,,,
+sound,0,,,,,
+textexpansion,0,:,,,,
+theme,0,2,#ffffff,#000000,,
+tooltips,1,,,,,
+turbo,0,,,,,
+vars,1,,,,,

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NZ WHV Fill Helper — Options</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 760px; margin: 32px auto; padding: 0 20px 60px; color: #16181d;
+      line-height: 1.5;
+    }
+    h1 { font-size: 19px; margin: 0 0 4px; }
+    p.lede { color: #5b6472; font-size: 13px; margin: 0 0 22px; }
+    label { display: block; font-weight: 600; font-size: 13px; margin: 18px 0 6px; }
+    textarea, input[type="text"] {
+      width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px; padding: 10px 12px; border: 1px solid #c9ced6;
+      border-radius: 7px; background: #fbfcfe; color: #16181d;
+    }
+    textarea { min-height: 320px; resize: vertical; line-height: 1.55; }
+    .row { display: flex; gap: 10px; align-items: center; margin-top: 16px; }
+    button {
+      padding: 8px 14px; border-radius: 7px; border: 1px solid #c9ced6;
+      background: #fff; cursor: pointer; font-size: 13px; font-weight: 500;
+    }
+    button.primary { background: #12325c; color: #fff; border-color: #12325c; }
+    button:hover { filter: brightness(.97); }
+    #status { font-size: 12.5px; color: #14532d; }
+    .hint { font-size: 12px; color: #6b7280; margin-top: 8px; }
+    .warn {
+      background: #fff7ed; border: 1px solid #fed7aa; color: #7c2d12;
+      padding: 10px 12px; border-radius: 7px; font-size: 12.5px; margin-top: 18px;
+    }
+    code { background: #eef2f7; padding: 1px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Fill helper profile</h1>
+  <p class="lede">
+    One value per line: <code>Label = value</code>. Order matters — it is the
+    order the queue hands values out. Lines starting with <code>#</code> are ignored.
+  </p>
+
+  <label for="profile">Your values</label>
+  <textarea id="profile" spellcheck="false" placeholder="Family name = EXAMPLE&#10;Given name 1 = TEST&#10;Passport number = X1234567&#10;Date of birth = 1990-01-01&#10;Passport expiry date = 2035-01-01"></textarea>
+
+  <label for="country">Target country</label>
+  <input type="text" id="country" spellcheck="false" placeholder="e.g. BELGIUM" />
+  <div class="hint">
+    On the Working Holiday scheme list, this row gets an outline and a
+    <code>TARGET</code> badge, and the panel shows <code>OPEN</code> or
+    <code>CLOSED</code>. Case does not matter. Leave it blank to disable the
+    highlight.
+  </div>
+
+  <label for="skip">Never auto-answer a question containing (regex, case-insensitive)</label>
+  <input type="text" id="skip" spellcheck="false" />
+
+  <div class="row">
+    <button id="save" class="primary">Save</button>
+    <button id="loadExample">Load template</button>
+    <button id="clear">Clear</button>
+    <span id="status"></span>
+  </div>
+
+  <div class="hint">
+    Stored locally with <code>chrome.storage.local</code>. Nothing is sent anywhere.
+  </div>
+
+  <div class="warn">
+    This extension types values. It does not click Next, Submit, Pay, or solve a
+    CAPTCHA. Those stay with you.
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

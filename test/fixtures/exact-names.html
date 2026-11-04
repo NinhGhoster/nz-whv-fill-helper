@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="data:," />
+<title>Test fixture — real field names</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #eef1f6; color: #16181d; font-size: 14px;
+  }
+  .top { background: #12325c; color: #fff; padding: 14px 22px; display: flex; align-items: center; gap: 14px; }
+  .top strong { font-size: 15px; }
+  .tag { margin-left: auto; font-size: 11px; background: rgba(255,255,255,.15); padding: 4px 9px; border-radius: 20px; }
+  .warn { background: #fff7ed; border-bottom: 1px solid #fed7aa; color: #7c2d12; padding: 9px 22px; font-size: 12.5px; }
+  .wrap { max-width: 900px; margin: 22px auto 70px; padding: 0 18px; }
+  .steps { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+  .chip { font-size: 11.5px; padding: 5px 10px; border-radius: 20px; background: #fff; border: 1px solid #d3d9e2; color: #5b6472; }
+  .chip.on { background: #12325c; border-color: #12325c; color: #fff; font-weight: 600; }
+  .card { background: #fff; border: 1px solid #d3d9e2; border-radius: 10px; padding: 20px 22px 24px; }
+  h2 { font-size: 17px; margin: 0 0 4px; }
+  .sub { color: #5b6472; font-size: 12.5px; margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; }
+  .f { margin-bottom: 13px; }
+  .f label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+  .f input[type=text], .f select {
+    width: 100%; padding: 8px 10px; font-size: 13.5px;
+    border: 1px solid #c9ced6; border-radius: 6px; background: #fff;
+  }
+  .chk label { font-weight: 400; font-size: 12.5px; display: flex; gap: 8px; align-items: flex-start; }
+  .foot { display: flex; gap: 10px; margin-top: 18px; }
+  button {
+    padding: 9px 16px; border-radius: 7px; border: 1px solid #c9ced6;
+    background: #fff; font-size: 13px; font-weight: 500; cursor: pointer;
+  }
+  button.primary { background: #12325c; color: #fff; border-color: #12325c; }
+  button:disabled { opacity: .45; cursor: default; }
+  .hide { display: none; }
+</style>
+</head>
+<body>
+<div class="top">
+  <strong>Working Holiday Scheme — real field names</strong>
+  <span class="tag">TEST FIXTURE</span>
+</div>
+<div class="warn">
+  Local copy of the field names from <code>rules.example.json</code>. All values
+  are synthetic. Nothing here is connected to Immigration New Zealand. Used to
+  prove that Fill page matches every name and every dropdown value before you
+  try it on the live site.
+</div>
+
+<div class="wrap">
+  <div class="steps"><span class="chip on">1. Personal1</span><span class="chip">2. Personal2</span><span class="chip">3. Medical1</span><span class="chip">4. Character</span><span class="chip">5. WorkingHolidaySpecific</span><span class="chip">6. Submit</span><span class="chip">7. Payment</span></div>
+  <section data-step="1" class="card"><h2>Personal1</h2><p class="sub">Personal1.aspx · 12 rules · real field names</p><div class="grid"><div class="f"><label>personDetails / familyNameTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:personDetails:familyNameTextBox" autocomplete="off"></div>
+<div class="f"><label>personDetails / givenName1Textbox</label><input type="text" name="_ctl0:ContentPlaceHolder1:personDetails:givenName1Textbox" autocomplete="off"></div>
+<div class="f"><label>personDetails / dateOfBirthDatePicker_DatePicker</label><input type="text" name="_ctl0:ContentPlaceHolder1:personDetails:dateOfBirthDatePicker_DatePicker" autocomplete="off"></div>
+<div class="f"><label>address / address1TextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:addressContactDetails:address:address1TextBox" autocomplete="off"></div>
+<div class="f"><label>address / suburbTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:addressContactDetails:address:suburbTextBox" autocomplete="off"></div>
+<div class="f"><label>address / cityTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:addressContactDetails:address:cityTextBox" autocomplete="off"></div>
+<div class="f"><label>contactDetails / emailAddressTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:addressContactDetails:contactDetails:emailAddressTextBox" autocomplete="off"></div>
+<div class="f"><label>personDetails / genderDropDownList</label><select name="_ctl0:ContentPlaceHolder1:personDetails:genderDropDownList"><option value="">Select</option><option value="M">M</option><option value="X">X</option><option value="Z">Z</option><option value="F">F</option></select></div>
+<div class="f"><label>personDetails / CountryDropDownList</label><select name="_ctl0:ContentPlaceHolder1:personDetails:CountryDropDownList"><option value="">Select</option><option value="0">0</option><option value="17">17</option><option value="16">16</option></select></div>
+<div class="f"><label>address / countryDropDownList</label><select name="_ctl0:ContentPlaceHolder1:addressContactDetails:address:countryDropDownList"><option value="">Select</option><option value="0">0</option><option value="17">17</option><option value="16">16</option></select></div>
+<div class="f"><label>hasAgent / representedByAgentDropdownlist</label><select name="_ctl0:ContentPlaceHolder1:hasAgent:representedByAgentDropdownlist"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>hasCreditCard / hasCreditCardDropDownlist</label><select name="_ctl0:ContentPlaceHolder1:hasCreditCard:hasCreditCardDropDownlist"><option value="">Select</option><option value="No">No</option><option value="Unknown">Unknown</option><option value="Yes">Yes</option></select></div></div></section><section data-step="2" class="card hide"><h2>Personal2</h2><p class="sub">Personal2.aspx · 5 rules · real field names</p><div class="grid"><div class="f"><label>identification / passportNumberTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:identification:passportNumberTextBox" autocomplete="off"></div>
+<div class="f"><label>identification / confirmPassportNumberTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:identification:confirmPassportNumberTextBox" autocomplete="off"></div>
+<div class="f"><label>identification / passportExpiryDateDatePicker_DatePicker</label><input type="text" name="_ctl0:ContentPlaceHolder1:identification:passportExpiryDateDatePicker_DatePicker" autocomplete="off"></div>
+<div class="f"><label>identification / otherIssueDateDatePicker_DatePicker</label><input type="text" name="_ctl0:ContentPlaceHolder1:identification:otherIssueDateDatePicker_DatePicker" autocomplete="off"></div>
+<div class="f"><label>identification / otherIdentificationDropdownlist</label><select name="_ctl0:ContentPlaceHolder1:identification:otherIdentificationDropdownlist"><option value="">Select</option><option value="0">0</option><option value="4">4</option><option value="3">3</option></select></div></div></section><section data-step="3" class="card hide"><h2>Medical1</h2><p class="sub">Medical1.aspx · 9 rules · real field names</p><div class="grid"><div class="f"><label>medicalConditions / renalDialysisDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:renalDialysisDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / tuberculosisDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:tuberculosisDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / cancerDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:cancerDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / heartDiseaseDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:heartDiseaseDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / disabilityDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:disabilityDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / hospitalisationDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:hospitalisationDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / residentailCareDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:residentailCareDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>pregnancy / pregnancyStatusDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:pregnancy:pregnancyStatusDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>medicalConditions / tbRiskDropDownList</label><select name="_ctl0:ContentPlaceHolder1:medicalConditions:tbRiskDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div></div></section><section data-step="4" class="card hide"><h2>Character</h2><p class="sub">Character.aspx · 8 rules · real field names</p><div class="grid"><div class="f"><label>character / imprisonment5YearsDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:imprisonment5YearsDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / imprisonment12MonthsDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:imprisonment12MonthsDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / deportedDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:deportedDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / chargedDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:chargedDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / convictedDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:convictedDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / underInvestigationDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:underInvestigationDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / excludedDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:excludedDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>character / removedDropDownList</label><select name="_ctl0:ContentPlaceHolder1:character:removedDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div></div></section><section data-step="5" class="card hide"><h2>WorkingHolidaySpecific</h2><p class="sub">WorkingHolidaySpecific.aspx · 6 rules · real field names</p><div class="grid"><div class="f"><label>offshoreDetails / intendedTravelDateDatePicker_DatePicker</label><input type="text" name="_ctl0:ContentPlaceHolder1:offshoreDetails:intendedTravelDateDatePicker_DatePicker" autocomplete="off"></div>
+<div class="f"><label>commonWHSQuestions / previousWhsPermitVisaDropDownList</label><select name="_ctl0:ContentPlaceHolder1:offshoreDetails:commonWHSQuestions:previousWhsPermitVisaDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>commonWHSQuestions / sufficientFundsHolidayDropDownList</label><select name="_ctl0:ContentPlaceHolder1:offshoreDetails:commonWHSQuestions:sufficientFundsHolidayDropDownList"><option value="">Select</option><option value="No">No</option><option value="Unknown">Unknown</option><option value="Yes">Yes</option></select></div>
+<div class="f"><label>offshoreDetails / beenToNzDropDownList</label><select name="_ctl0:ContentPlaceHolder1:offshoreDetails:beenToNzDropDownList"><option value="">Select</option><option value="Yes">Yes</option><option value="Unknown">Unknown</option><option value="No">No</option></select></div>
+<div class="f"><label>requirementsQuestions / sufficientFundsOnwardTicketDropDownList</label><select name="_ctl0:ContentPlaceHolder1:offshoreDetails:requirementsQuestions:sufficientFundsOnwardTicketDropDownList"><option value="">Select</option><option value="No">No</option><option value="Unknown">Unknown</option><option value="Yes">Yes</option></select></div>
+<div class="f"><label>requirementsQuestions / readRequirementsDropDownList</label><select name="_ctl0:ContentPlaceHolder1:offshoreDetails:requirementsQuestions:readRequirementsDropDownList"><option value="">Select</option><option value="No">No</option><option value="Unknown">Unknown</option><option value="Yes">Yes</option></select></div></div></section><section data-step="6" class="card hide"><h2>Submit</h2><p class="sub">Submit.aspx · 11 rules · real field names</p><div class="grid"><div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:falseStatementCheckBox" value="1"> ContentPlaceHolder1 / falseStatementCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:notesCheckBox" value="1"> ContentPlaceHolder1 / notesCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:circumstancesCheckBox" value="1"> ContentPlaceHolder1 / circumstancesCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:warrantsCheckBox" value="1"> ContentPlaceHolder1 / warrantsCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:informationCheckBox" value="1"> ContentPlaceHolder1 / informationCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:healthCheckBox" value="1"> ContentPlaceHolder1 / healthCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:adviceCheckBox" value="1"> ContentPlaceHolder1 / adviceCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:registrationCheckBox" value="1"> ContentPlaceHolder1 / registrationCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:entitlementCheckbox" value="1"> ContentPlaceHolder1 / entitlementCheckbox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:permitExpiryCheckBox" value="1"> ContentPlaceHolder1 / permitExpiryCheckBox</label></div>
+<div class="f chk"><label><input type="checkbox" name="_ctl0:ContentPlaceHolder1:medicalInsuranceCheckBox" value="1"> ContentPlaceHolder1 / medicalInsuranceCheckBox</label></div></div></section><section data-step="7" class="card hide"><h2>Payment</h2><p class="sub">Payment.aspx · 1 rules · real field names</p><div class="grid"><div class="f"><label>ContentPlaceHolder1 / payerNameTextBox</label><input type="text" name="_ctl0:ContentPlaceHolder1:payerNameTextBox" autocomplete="off"></div></div></section>
+  <div class="foot">
+    <button id="back">Back</button>
+    <button id="next" class="primary">Next</button>
+  </div>
+</div>
+
+<script>
+  const TOTAL = 7;
+  let step = 1;
+  const chips = Array.from(document.querySelectorAll('.chip'));
+  const sections = Array.from(document.querySelectorAll('section[data-step]'));
+
+  function render() {
+    chips.forEach((c, i) => c.classList.toggle('on', i + 1 === step));
+    sections.forEach((s) => s.classList.toggle('hide', Number(s.dataset.step) !== step));
+    document.getElementById('back').disabled = step === 1;
+    document.getElementById('next').disabled = step === TOTAL;
+    window.scrollTo(0, 0);
+  }
+
+  document.getElementById('next').addEventListener('click', () => {
+    if (step < TOTAL) { step += 1; render(); }
+  });
+  document.getElementById('back').addEventListener('click', () => {
+    if (step > 1) { step -= 1; render(); }
+  });
+
+  render();
+</script>
+
+<script src="harness.js"></script>
+</body>
+</html>

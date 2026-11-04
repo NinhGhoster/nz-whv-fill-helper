@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+
+# Personal Lightning Autofill exports. Only the synthetic example is tracked.
+lightning-autofill-*.csv
+!lightning-autofill.example.csv
+
+# Generated from a personal export. Use the .example versions in the repo.
+extension/rules.json
+rules-report.md
+
+# extension/rules.js is tracked as an empty placeholder because the manifest
+# loads it. A generated version is rejected by .githooks/pre-commit.
+
+# Python bytecode from the generator scripts.
+__pycache__/
+*.py[cod]

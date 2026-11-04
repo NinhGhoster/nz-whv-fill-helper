@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "NZ WHV Fill Helper",
+  "version": "1.2.1",
+  "description": "Guided fill helper for your own NZ working holiday application. Highlights your target scheme. Types values. Never submits.",
+  "minimum_chrome_version": "100",
+  "permissions": ["storage"],
+  "host_permissions": ["https://onlineservices.immigration.govt.nz/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "NZ WHV Fill Helper — options"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://onlineservices.immigration.govt.nz/WorkingHoliday/*",
+        "https://onlineservices.immigration.govt.nz/PaymentGateway/*",
+        "file:///*",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "js": ["rules.js", "content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-target-country="BELGIUM">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="data:," />
+<title>Test fixture — scheme list</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 40px; color: #16181d; }
+  .category-item-container { display: grid; grid-template-columns: repeat(2, 220px); gap: 14px; }
+  .category-item { border: 1px solid #c9ced6; border-radius: 8px; }
+  .category-item a { display: block; padding: 14px; color: #12325c; text-decoration: none; }
+  .category-item hr { border: 0; border-top: 1px solid #e6e9ef; margin: 8px 0; }
+  .mock-warn { margin-top: 24px; padding: 10px 12px; background: #fff7ed; border: 1px solid #fed7aa; color: #7c2d12; border-radius: 7px; font-size: 13px; max-width: 460px; }
+</style>
+</head>
+<body>
+
+<h1>Working Holiday Schemes</h1>
+<p>Test fixture — mirrors the live list's link and status markup only.</p>
+
+<div class="category-item-container">
+  <div class="category-item">
+    <a href="/WorkingHoliday/Application/Create.aspx?CountryId=5&amp;OffShore=1&amp;STZ=0" id="ContentPlaceHolder1_countryRepeater_createLink_1">
+      <div class="category-item-footer-hot">
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryName_1">BELGIUM</span></div>
+        <hr />
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryStatus_1">OPEN</span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="category-item">
+    <a href="/WorkingHoliday/Application/Create.aspx?CountryId=214&amp;OffShore=1&amp;STZ=0" id="ContentPlaceHolder1_countryRepeater_createLink_2">
+      <div class="category-item-footer-hot">
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryName_2">THAILAND</span></div>
+        <hr />
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryStatus_2">CLOSED</span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="category-item">
+    <a href="/WorkingHoliday/Application/Create.aspx?CountryId=999&amp;OffShore=1&amp;STZ=0" id="ContentPlaceHolder1_countryRepeater_createLink_3">
+      <div class="category-item-footer-hot">
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryName_3">UNITED STATES OF AMERICA</span></div>
+        <hr />
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryStatus_3">CLOSED</span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="category-item">
+    <a href="/WorkingHoliday/Application/Create.aspx?CountryId=192&amp;OffShore=1&amp;STZ=0" id="ContentPlaceHolder1_countryRepeater_createLink_4">
+      <div class="category-item-footer-hot">
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryName_4">UNITED KINGDOM</span></div>
+        <hr />
+        <div><span id="ContentPlaceHolder1_countryRepeater_countryStatus_4">OPEN</span></div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="mock-warn">
+  Test fixture only. The links point at fake ids and nothing is submitted.
+</div>
+
+<script src="harness.js"></script>
+</body>
+</html>
