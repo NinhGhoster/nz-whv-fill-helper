@@ -150,12 +150,12 @@ async function main() {
   );
   await sleep(300);
 
-  check('autofill family name', await evalJS(`document.getElementById('family').value`), 'EXAMPLE');
-  check('autofill given name', await evalJS(`document.getElementById('given1').value`), 'TEST');
+  check('autofill family name', await evalJS(`document.getElementById('family').value`), 'Doe');
+  check('autofill given name', await evalJS(`document.getElementById('given1').value`), 'John');
   check('autofill date of birth', await evalJS(`document.getElementById('dob').value`), '1990-01-01');
-  check('autofill gender select', await evalJS(`document.getElementById('gender').value`), 'Female');
+  check('autofill gender select', await evalJS(`document.getElementById('gender').value`), 'Male');
   check('autofill country select', await evalJS(`document.getElementById('country').value`), 'Belgium');
-  check('autofill email', await evalJS(`document.getElementById('email').value`), 'you@example.com');
+  check('autofill email', await evalJS(`document.getElementById('email').value`), 'john.doe@example.com');
 
   // 3. keyboard shortcut: reset queue, focus a field, Alt+V
   await evalJS(
@@ -164,7 +164,7 @@ async function main() {
   await sleep(100);
   await evalJS(`document.getElementById('mobile').focus()`);
   await pressAlt('KeyV', 'v', 86);
-  check('Alt+V typed queued value', await evalJS(`document.getElementById('mobile').value`), 'Ms');
+  check('Alt+V typed queued value', await evalJS(`document.getElementById('mobile').value`), 'Mr');
 
   const cursorAfter = await evalJS(
     `document.getElementById('nzwhv-helper-host').shadowRoot.getElementById('count').textContent`

@@ -96,12 +96,12 @@ async function main() {
 
   // 2. save a profile through the real options UI
   const profile = [
-    'Family name = TESTFAMILY',
-    'Given name 1 = TESTGIVEN',
+    'Family name = Doe',
+    'Given name 1 = John',
     'Date of birth = 1990-01-02',
     'Gender = Male',
     'Country = Belgium',
-    'Email = e2e@example.com'
+    'Email = john.doe@example.com'
   ].join('\\n');
 
   await evalJS(`(() => {
@@ -134,7 +134,7 @@ async function main() {
   );
   await sleep(400);
 
-  check('profile flows to field', await evalJS(`document.getElementById('family').value`), 'TESTFAMILY');
+  check('profile flows to field', await evalJS(`document.getElementById('family').value`), 'Doe');
   check('select flows to field', await evalJS(`document.getElementById('gender').value`), 'Male');
 
   // 4. no submit path

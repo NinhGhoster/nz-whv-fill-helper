@@ -82,9 +82,9 @@ python3 tools/build-rules.py lightning-autofill.example.csv --example
 ```
 
 That writes `extension/rules.example.json`, `extension/rules.example.js` and
-`rules-report.example.md`. The example values are fake. The committed
-`extension/rules.js` is an empty placeholder, so the extension loads but does
-not fill anything until you generate your own rules.
+`rules-report.example.md`. The example values are a fictional John Doe profile.
+The committed `extension/rules.js` is an empty placeholder, so the extension
+loads but does not fill anything until you generate your own rules.
 
 The example export has 52 fields across 7 pages.
 
@@ -117,8 +117,9 @@ One line per value, `Label = value`. Order matters. Lines starting with `#` are
 ignored.
 
 ```
-Family name = EXAMPLE
-Given name 1 = TEST
+Family name = Doe
+Given name 1 = John
+Email = john.doe@example.com
 Passport number = X1234567
 Passport expiry = 2035-01-01
 Date of birth = 1990-01-01

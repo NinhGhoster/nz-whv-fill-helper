@@ -13,10 +13,10 @@
   'use strict';
 
   var PROFILE = [
-    'Preferred title = Ms',
-    'Family name = EXAMPLE',
-    'Given name 1 = TEST',
-    'Gender = Female',
+    'Preferred title = Mr',
+    'Family name = Doe',
+    'Given name 1 = John',
+    'Gender = Male',
     'Date of birth = 1990-01-01',
     'Country of birth = Belgium',
     'Town or city of birth = Brussels',
@@ -28,7 +28,7 @@
     'Country = Belgium',
     'Phone = +32 2 123 45 67',
     'Mobile = +32 470 12 34 56',
-    'Email = you@example.com',
+    'Email = john.doe@example.com',
     'Passport number = X1234567',
     'Re-enter passport number = X1234567',
     'Passport expiry date = 2035-01-01',

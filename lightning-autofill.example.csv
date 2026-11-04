@@ -10,14 +10,14 @@ c8,Payment,onlineservices.immigration.govt.nz/PaymentGateway/OnLinePayment.aspx,
 c9,Payment final,payments.paystation.co.nz/hosted/,,,,
 ### AUTOFILL RULES ###,,,,,,
 Rule ID,Type,Name,Value,Site,Mode,Profile
-r26,0,"""_ctl0:ContentPlaceHolder1:personDetails:familyNameTextBox""",EXAMPLE,,1,c2
-r27,0,"""_ctl0:ContentPlaceHolder1:personDetails:givenName1Textbox""",TEST,,1,c2
+r26,0,"""_ctl0:ContentPlaceHolder1:personDetails:familyNameTextBox""",Doe,,1,c2
+r27,0,"""_ctl0:ContentPlaceHolder1:personDetails:givenName1Textbox""",John,,1,c2
 r28,0,"""_ctl0:ContentPlaceHolder1:personDetails:dateOfBirthDatePicker_DatePicker""","1 January, 1990",,1,c2
 r29,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:address1TextBox""",1 Example Street,,1,c2
 r30,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:suburbTextBox""",Sampleton,,1,c2
 r31,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:cityTextBox""",Sampleton,,1,c2
-r32,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:contactDetails:emailAddressTextBox""",you@example.com,,1,c2
-r33,2,"""_ctl0:ContentPlaceHolder1:personDetails:genderDropDownList""","""F""",,1,c2
+r32,0,"""_ctl0:ContentPlaceHolder1:addressContactDetails:contactDetails:emailAddressTextBox""",john.doe@example.com,,1,c2
+r33,2,"""_ctl0:ContentPlaceHolder1:personDetails:genderDropDownList""","""M""",,1,c2
 r34,2,"""_ctl0:ContentPlaceHolder1:personDetails:CountryDropDownList""","""16""",,1,c2
 r35,2,"""_ctl0:ContentPlaceHolder1:addressContactDetails:address:countryDropDownList""","""16""",,1,c2
 r36,2,"""_ctl0:ContentPlaceHolder1:hasAgent:representedByAgentDropdownlist""","""No""",,1,c2
@@ -61,7 +61,7 @@ r73,3,"""_ctl0:ContentPlaceHolder1:registrationCheckBox""",1,,1,c7
 r74,3,"""_ctl0:ContentPlaceHolder1:entitlementCheckbox""",1,,1,c7
 r75,3,"""_ctl0:ContentPlaceHolder1:permitExpiryCheckBox""",1,,1,c7
 r76,3,"""_ctl0:ContentPlaceHolder1:medicalInsuranceCheckBox""",1,,1,c7
-r77,0,"""_ctl0:ContentPlaceHolder1:payerNameTextBox""",EXAMPLE TEST,,1,c8
+r77,0,"""_ctl0:ContentPlaceHolder1:payerNameTextBox""",John Doe,,1,c8
 ### AUTOFILL SETTINGS ###,,,,,,
 advanced,[],,,,,
 exceptions,[],,,,,

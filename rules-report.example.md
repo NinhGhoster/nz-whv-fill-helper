@@ -6,14 +6,14 @@ Source: `lightning-autofill.example.csv`
 
 | # | type | field name | value |
 |---|---|---|---|
-| 1 | text | `…:personDetails:familyNameTextBox` | E****** |
-| 2 | text | `…:personDetails:givenName1Textbox` | T*** |
+| 1 | text | `…:personDetails:familyNameTextBox` | D** |
+| 2 | text | `…:personDetails:givenName1Textbox` | J*** |
 | 3 | text | `…:personDetails:dateOfBirthDatePicker_DatePicker` | 1************** |
 | 4 | text | `…:addressContactDetails:address:address1TextBox` | 1*************** |
 | 5 | text | `…:addressContactDetails:address:suburbTextBox` | S******** |
 | 6 | text | `…:addressContactDetails:address:cityTextBox` | S******** |
-| 7 | text | `…:addressContactDetails:contactDetails:emailAddressTextBox` | y************** |
-| 8 | select | `…:personDetails:genderDropDownList` | F |
+| 7 | text | `…:addressContactDetails:contactDetails:emailAddressTextBox` | j******************* |
+| 8 | select | `…:personDetails:genderDropDownList` | M |
 | 9 | select | `…:personDetails:CountryDropDownList` | 16 |
 | 10 | select | `…:addressContactDetails:address:countryDropDownList` | 16 |
 | 11 | select | `…:hasAgent:representedByAgentDropdownlist` | No |
@@ -87,4 +87,4 @@ Source: `lightning-autofill.example.csv`
 
 | # | type | field name | value |
 |---|---|---|---|
-| 1 | text | `…:payerNameTextBox` | E*********** |
+| 1 | text | `…:payerNameTextBox` | J******* |

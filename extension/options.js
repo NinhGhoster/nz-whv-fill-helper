@@ -11,11 +11,11 @@ const TEMPLATE = `# One value per line: Label = value
 # Order matters. Lines starting with # are ignored.
 
 # --- Page 1: Personal details ---
-Preferred title = Ms
-Family name = EXAMPLE
-Given name 1 = TEST
+Preferred title = Mr
+Family name = Doe
+Given name 1 = John
 Given name 2 =
-Gender = Female
+Gender = Male
 Date of birth = 1990-01-01
 Country of birth = Belgium
 Town or city of birth = Brussels
@@ -27,7 +27,7 @@ Postcode = 1000
 Country = Belgium
 Phone = +32 2 123 45 67
 Mobile = +32 470 12 34 56
-Email = you@example.com
+Email = john.doe@example.com
 Are you represented by an immigration adviser = No
 Do you have a payment card available = Yes
 
